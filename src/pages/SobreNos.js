@@ -1,7 +1,8 @@
 import React from "react";
 import { Parallax, Background } from "react-parallax";
-import clinica from "../imagens/clinica_red.JPG";
+import happyDoc from "../imagens/HappyDoc&pacient_2.jpg"
 import logo_text from "../imagens/logo_text.png";
+import logo_principal from "../imagens/logo_clinica_principal.png";
 import Footer from "../components/footer2";
 import Conheca from "../imagens/geliat-extralight (1).png";
 import gastro from "../imagens/gastro.png";
@@ -58,13 +59,12 @@ class Info extends React.Component {
       <div>
         <div>
           <Parallax
-            blur={2}
-            bgImage={clinica}
+            bgImage={happyDoc}
             bgImageAlt="clinica"
             strength={100}
           >
             <img
-              src={logo_text}
+              src={logo_principal}
               align="right"
               style={{ padding: "100px", paddingTop: "80px" }}
             />
