@@ -5,12 +5,7 @@ import logo_principal from "../imagens/logo_clinica_principal.png";
 import Footer from "../components/footer2";
 import "./Font.css";
 import {Col, Container, Row} from "react-grid-system";
-import coronacuidado from "../imagens/corona_cuidado.JPG";
-import alerta_covid from"../imagens/Atendimento_Suspenso.png";
-import info from "../imagens/INFORMATIVO.jpg";
-import mascara from "../imagens/mascara.JPG";
-import boletim from "../imagens/boletim.png";
-import Carousel from "react-simply-carousel";
+import alerta_covid from "../imagens/Atendimento_Suspenso.png";
 
 const style = {
   margin: "1%",
@@ -48,46 +43,12 @@ class Info extends React.Component {
           </Parallax>
         </div>
 
-        <div style={{ paddingTop: "50px", paddingBottom: "50px" }}>
-          <Container justify="center">
-            <Row justify="center">
-              <Col sm={1} align="right" className="Box">
-                <img src="https://i.ibb.co/CPkvkj2/calendar.png" />
-              </Col>
-              <Col sm={4}>
-                <img
-                  src="https://see.fontimg.com/api/renderfont4/6YLRq/eyJyIjoiZnMiLCJoIjoyMiwidyI6MTAwMCwiZnMiOjIyLCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/SG9yw6FyaW8gZGUgYXRlbmRpbWVudG8/geliat-extralight.png"
-                  style={{ paddingTop: "40px", paddingBottom: "10px" }}
-                />
-                <header className="Texto-1" border="20px">
-                  Segunda - Domingo: 8h às 17h<br></br>
-                </header>
-              </Col>
-              <Col sm={1} className="Box">
-                <img src="https://i.ibb.co/s3RccYV/phone.png" />
-              </Col>
-              <Col sm={4}>
-                <br></br>
-                <img
-                  src="https://see.fontimg.com/api/renderfont4/6YLRq/eyJyIjoiZnMiLCJoIjoyMiwidyI6MTAwMCwiZnMiOjIyLCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/VGVsZWZvbmVzIGRlIENvbnRhdG8/geliat-extralight.png"
-                  style={{ paddingTop: "20px", paddingBottom: "10px" }}
-                />
-                <header className="Texto-1" border="20px">
-                  (31) 34555555 | (31)999999999
-                </header>
-              </Col>
-            </Row>
-          </Container>
-        </div>
         <div style={{ padding: "10px" }}>
           <Container className="Especial">
             <img src="https://see.fontimg.com/api/renderfont4/8Mzm0/eyJyIjoiZnMiLCJoIjo0NywidyI6MTAwMCwiZnMiOjQ3LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiIzhBMDAwMCIsInQiOjF9/U3VhIHNhw7pkZSBlbSBib2FzIG3Do29zLg/sambosa.png" />
           </Container>
         </div>
         <div>
-          <br></br>
-          <br></br>
-          <br></br>
           <img
             src="https://see.fontimg.com/api/renderfont4/6YLRq/eyJyIjoiZnMiLCJoIjo0MiwidyI6MTAwMCwiZnMiOjQyLCJmZ2MiOiIjODQxMDEwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/U29icmUgTsOzcw/geliat-extralight.png"
             align="left"
@@ -120,7 +81,7 @@ class Info extends React.Component {
               </Col>
               <Col sm={4}>
                 <img src="https://i.ibb.co/d5Ch3Zm/valores.jpg" />
-                <br></br>
+                <br/>
                 <img
                   src="https://see.fontimg.com/api/renderfont4/6YLRq/eyJyIjoiZnMiLCJoIjozOSwidyI6MTAwMCwiZnMiOjM5LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/VmFsb3Jlcw/geliat-extralight.png"
                   style={{ paddingTop: "10px" }}
@@ -133,16 +94,48 @@ class Info extends React.Component {
             </Row>
           </Container>
         </div>
+        <div style={{ paddingTop: "50px", paddingBottom: "50px" }}>
+          <Container justify="center">
+            <Row justify="center">
+              <Col sm={1} align="right" className="Box">
+                <img src="https://i.ibb.co/CPkvkj2/calendar.png" />
+              </Col>
+              <Col sm={4}>
+                <img
+                    src="https://see.fontimg.com/api/renderfont4/6YLRq/eyJyIjoiZnMiLCJoIjoyMiwidyI6MTAwMCwiZnMiOjIyLCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/SG9yw6FyaW8gZGUgYXRlbmRpbWVudG8/geliat-extralight.png"
+                    style={{ paddingTop: "40px", paddingBottom: "10px" }}
+                />
+                <header className="Texto-1" border="20px">
+                  Segunda - Sabado: 9h às 18h<br></br>
+                </header>
+              </Col>
+              <Col sm={1} className="Box">
+                <img src="https://i.ibb.co/s3RccYV/phone.png" />
+              </Col>
+              <Col sm={4}>
+                <br></br>
+                <img
+                    src="https://see.fontimg.com/api/renderfont4/6YLRq/eyJyIjoiZnMiLCJoIjoyMiwidyI6MTAwMCwiZnMiOjIyLCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/VGVsZWZvbmVzIGRlIENvbnRhdG8/geliat-extralight.png"
+                    style={{ paddingTop: "20px", paddingBottom: "10px" }}
+                />
+                <header className="Texto-1" border="20px">
+                  (31) 34555555 | (31)999999999
+                </header>
+              </Col>
+            </Row>
+          </Container>
+        </div>
         <div>
-          <br></br>
-          <br></br>
-          <br></br>
+          <br/>
+          <br/>
         </div>
         <div>
             <img
                 src={alerta_covid} width={1000}
             />
         </div>
+        <br/>
+        <br/>
         <Footer/>
       </div>
     );
