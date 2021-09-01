@@ -16,7 +16,7 @@ class Footer extends React.Component {
     return (
       <React.Fragment>
         <AppBar position="static">
-          <Toolbar className="app-footer2">
+          <Toolbar className="app-footer">
             <IconButton>
               <FacebookIcon />
             </IconButton>

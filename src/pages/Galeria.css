@@ -3,7 +3,13 @@
     height: 300px;
     overflow: hidden;
     margin: 2px;
-    align-content: center;
+}
+
+.container-gallery {
+    height: 100vh;
+    justify-content: center;
+    padding: 30px;
+    margin-left: 10px
 }
 
 .Logo {

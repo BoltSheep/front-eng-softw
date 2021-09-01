@@ -6,7 +6,6 @@ import { ReactComponent as FacebookIcon } from "../../imagens/facebook.svg";
 import { ReactComponent as GoogleIcon } from "../../imagens/google.svg";
 import { ReactComponent as WhatsAppIcon } from "../../imagens/whatsapp.svg";
 import { ReactComponent as InstagramIcon } from "../../imagens/instagram.svg";
-import "./Footer.css";
 
 class Footer extends React.Component {
   constructor() {
