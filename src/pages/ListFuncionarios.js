@@ -4,7 +4,7 @@ import { Card } from "semantic-ui-react";
 import CardFunc from "../components/cardFunc";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import getFuncionarios from "../functions/getFuncionario";
-import Footer from "../components/footer";
+import Footer from "../components/footer2";
 
 import "./List.css";
 

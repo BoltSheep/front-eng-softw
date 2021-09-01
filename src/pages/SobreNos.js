@@ -8,7 +8,11 @@ import {Col, Container, Row} from "react-grid-system";
 import alerta_covid from "../imagens/Atendimento_Suspenso.png";
 import sobre_nos from "../imagens/sobre_nos.png";
 import a_clinica from "../imagens/a_clinica.png";
-import slideImg from "../imagens/slide-2.jpg";;
+import slideImg from "../imagens/slide-2.jpg";
+import missaoIcon from "../imagens/missao.png";
+import valoresIcon from "../imagens/valores.png";
+import agendaIcon from "../imagens/Agenda.png"
+import telefoneIcon from "../imagens/telefone icon.png"
 
 const style = {
   margin: "1%",
@@ -69,31 +73,30 @@ class Info extends React.Component {
         <br/>
         <br/>
         <br/>
-        <div style={{ padding: "50px" }}>
+        <div style={{ padding: "20px" }}>
           <Container>
             <Row justify="center" align="center">
               <Col sm={4}>
-                <img src="https://i.ibb.co/fMcdrVG/missao.jpg" />
-                <br></br>
                 <img
-                  src="https://see.fontimg.com/api/renderfont4/6YLRq/eyJyIjoiZnMiLCJoIjozOSwidyI6MTAwMCwiZnMiOjM5LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/TWlzc8Ojbw/geliat-extralight.png"
-                  style={{ paddingLeft: "0px" }}
+                    src={missaoIcon}
+                    width={100}
+                 alt={"Missão"}
                 />
-                <header className="Texto" border="50px">
-                  Promover a saúde prestando um atendimento de qualidade e
-                  humanizado, com respeito ao indivíduo em todos os aspectos.
+                <br/>
+                <header className="Texto">
+                  Prestar assistencia integral, oferecer ensino especializado
+                  humanizado, com respeito ao paciente em todos os aspectos.
                 </header>
               </Col>
-              <Col sm={4}>
-                <img src="https://i.ibb.co/d5Ch3Zm/valores.jpg" />
-                <br/>
-                <img
-                  src="https://see.fontimg.com/api/renderfont4/6YLRq/eyJyIjoiZnMiLCJoIjozOSwidyI6MTAwMCwiZnMiOjM5LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/VmFsb3Jlcw/geliat-extralight.png"
-                  style={{ paddingTop: "10px" }}
+              <Col sm={5}>
+                <img src={valoresIcon}
+                     width={100}
+                     alt={"Valores"}
                 />
-                <header className="Texto" border="50px">
-                  Ética, competência, humanização, eficiência, qualidade,
-                  transparência, compromisso, respeito e confiança.
+                <br/>
+                <header className="Texto">
+                  Gestao eficiente, ética, competência, humanização,
+                  transparência, compromisso, respeito, confiança e responsabilidade socioambiental.
                 </header>
               </Col>
             </Row>
@@ -106,11 +109,13 @@ class Info extends React.Component {
                   style={{ paddingTop: "10px" }}
               />
           </div>
+          <br/>
+          <br/>
         <div style={{ paddingTop: "50px", paddingBottom: "50px" }}>
           <Container justify="center">
             <Row justify="center">
               <Col sm={1} align="right" className="Box">
-                <img src="https://i.ibb.co/CPkvkj2/calendar.png" />
+                <img src={agendaIcon} width={85}/>
               </Col>
               <Col sm={4}>
                 <img
@@ -118,20 +123,20 @@ class Info extends React.Component {
                     style={{ paddingTop: "40px", paddingBottom: "10px" }}
                 />
                 <header className="Texto-1" border="20px">
-                  Segunda - Sabado: 9h às 18h<br></br>
+                  Segunda - Sabado: 9h às 18h<br/>
                 </header>
               </Col>
               <Col sm={1} className="Box">
-                <img src="https://i.ibb.co/s3RccYV/phone.png" />
+                <img src={telefoneIcon} width={85}  alt={'icone-telefone'}/>
               </Col>
               <Col sm={4}>
-                <br></br>
+                <br/>
                 <img
                     src="https://see.fontimg.com/api/renderfont4/6YLRq/eyJyIjoiZnMiLCJoIjoyMiwidyI6MTAwMCwiZnMiOjIyLCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/VGVsZWZvbmVzIGRlIENvbnRhdG8/geliat-extralight.png"
                     style={{ paddingTop: "20px", paddingBottom: "10px" }}
-                />
+                 alt={'Telefone-text'}/>
                 <header className="Texto-1" border="20px">
-                  (31) 34555555 | (31)999999999
+                  (31) 3921-xxxx| (31) 99891-xxxx
                 </header>
               </Col>
             </Row>
@@ -144,7 +149,7 @@ class Info extends React.Component {
         <div>
             <img
                 src={alerta_covid} width={1000}
-            />
+             alt={'Alerta_covid'}/>
         </div>
         <br/>
         <br/>

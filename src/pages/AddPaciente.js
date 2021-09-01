@@ -118,7 +118,7 @@ class AddPaciente extends React.Component {
         </Snackbar>
           <Grid container spacing={1}>
             <Grid item xs={12}>
-              Cadastramento de paciente
+              Cadastramento de Paciente
             </Grid>
             <Grid item xs={12}>
               <TextField

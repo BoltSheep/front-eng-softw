@@ -27,8 +27,11 @@ class Footer extends React.Component {
               <WhatsAppIcon />
             </IconButton>
             <IconButton>
-              <InstagramIcon />
+              <InstagramIcon/>
             </IconButton>
+              <span>
+                 Rua: Paulo Piedade Campos, Nº359
+              </span>
           </Toolbar>
         </AppBar>
       </React.Fragment>

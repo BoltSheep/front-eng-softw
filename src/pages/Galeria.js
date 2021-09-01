@@ -1,136 +1,105 @@
-import * as React from "react";
-import { render } from 'react-dom';
-import Gallery from 'react-grid-gallery';
-import logo_text from "../imagens/logo_text.png";
-import logo_principal from "../imagens/logo_clinica_principal.png";
-import "./Galeria.css";
-import Footer from "../components/footer";
+import * as React from 'react'
+import {render} from 'react-dom'
+import Gallery from 'react-grid-gallery'
+import logo_text from '../imagens/logo_clinica_principal.png'
+import galeria from '../imagens/photos_galery.png'
+import muitosDocs from '../imagens/LotsOfDocs.png'
+import './Galeria.css'
+import Footer from '../components/footer'
 
 
 const IMAGES =
-[{
-        src: "https://i.ibb.co/LQPS8BM/image.jpg",
-        thumbnail: "https://i.ibb.co/LQPS8BM/image.jpg",
+    [{
+        src: 'https://img.pebmed.com.br/wp-content/uploads/2020/05/11163757/enfermagem.jpg.webp',
+        thumbnail: 'https://img.pebmed.com.br/wp-content/uploads/2020/05/11163757/enfermagem.jpg.webp',
         thumbnailWidth: 325,
-        thumbnailHeight: 280,
-        caption: "Cuide-se"
-},
-{
-        src: "https://i.ibb.co/pz2FgVt/doctor.jpg",
-        thumbnail: "https://i.ibb.co/pz2FgVt/doctor.jpg",
-        thumbnailWidth: 325,
-        thumbnailHeight: 280,
-        caption: "Dr. Rodrigo"
-},
-{
-        src: "https://i.ibb.co/P1kZYDC/equipe.jpg",
-        thumbnail: "https://i.ibb.co/TPyBTWh/equipe.jpg",
-        thumbnailWidth: 325,
-        thumbnailHeight: 280,
-        caption: "Nossa equipe"
-},
-{
-  src: "https://i.ibb.co/jDfV55n/pediatria.jpg",
-  thumbnail: "https://i.ibb.co/jDfV55n/pediatria.jpg",
-  thumbnailWidth: 325,
-  thumbnailHeight: 280,
-  caption: "Pedriatria"
-},
+        thumbnailHeight: 280
+    },
+        {
+            src: 'https://boasnovasmg.com.br/wp-content/uploads/2020/10/ze-gotinha.jpg',
+            thumbnail: 'https://boasnovasmg.com.br/wp-content/uploads/2020/10/ze-gotinha.jpg',
+            thumbnailWidth: 325,
+            thumbnailHeight: 280
+        },
+        {
+            src: 'https://network.grupoabril.com.br/wp-content/uploads/sites/4/2016/10/medico-duvidas2.jpg?quality=70&strip=all',
+            thumbnail: 'https://network.grupoabril.com.br/wp-content/uploads/sites/4/2016/10/medico-duvidas2.jpg?quality=70&strip=all',
+            thumbnailWidth: 325,
+            thumbnailHeight: 280
+        },
+        {
+            src: 'https://cdn.secad.com.br/wp-content/uploads/2020/01/nova-puericultura-pediatria.jpg',
+            thumbnail: 'https://cdn.secad.com.br/wp-content/uploads/2020/01/nova-puericultura-pediatria.jpg',
+            thumbnailWidth: 325,
+            thumbnailHeight: 280
+        },
 
 
+        {
+            src: 'https://cdn.unibh.br/app/uploads/2020/05/13170945/Alunos-Medicina-Hospital-da-Baleia.jpeg',
+            thumbnail: 'https://cdn.unibh.br/app/uploads/2020/05/13170945/Alunos-Medicina-Hospital-da-Baleia.jpeg',
+            thumbnailWidth: 325,
+            thumbnailHeight: 280
+        },
+        {
+            src: 'https://i.ibb.co/ZcxWHr7/ultra.jpg',
+            thumbnail: 'https://i.ibb.co/ZcxWHr7/ultra.jpg',
+            thumbnailWidth: 325,
+            thumbnailHeight: 280,
+            caption: 'Ultrassonografia'
+        },
+        {
+            src: 'https://www.epa.com.br/wp-content/uploads/2016/07/baleia_portal_dma_A.jpg',
+            thumbnail: 'https://www.epa.com.br/wp-content/uploads/2016/07/baleia_portal_dma_A.jpg',
+            thumbnailWidth: 325,
+            thumbnailHeight: 280
+        },
+        {
+            src: 'https://i.ibb.co/qYfWSL7/doc.jpg',
+            thumbnail: 'https://i.ibb.co/qYfWSL7/doc.jpg',
+            thumbnailWidth: 325,
+            thumbnailHeight: 280
+        },
 
-{
-  src: "https://i.ibb.co/f42bZYr/corona.jpg",
-  thumbnail: "https://i.ibb.co/f42bZYr/corona.jpg",
-  thumbnailWidth: 325,
-  thumbnailHeight: 280,
-  caption: "Cuidado com o novo coronavirus"
-},
-{
-  src: "https://i.ibb.co/ZcxWHr7/ultra.jpg",
-  thumbnail: "https://i.ibb.co/ZcxWHr7/ultra.jpg",
-  thumbnailWidth: 325,
-  thumbnailHeight: 280,
-  caption: "Ultrassonografia"
-},
-{
-  src: "https://i.ibb.co/Bg2gFfR/clinica-red.jpg",
-  thumbnail: "https://i.ibb.co/Bg2gFfR/clinica-red.jpg",
-  thumbnailWidth: 325,
-  thumbnailHeight: 280,
-  caption: "Sua saúde em boas mãos"
-},
-{
-  src: "https://i.ibb.co/qYfWSL7/doc.jpg",
-  thumbnail: "https://i.ibb.co/qYfWSL7/doc.jpg",
-  thumbnailWidth: 325,
-  thumbnailHeight: 280,
-},
-
-{
-  src: "https://i.ibb.co/P14GkZ1/consultorio.jpg",
-  thumbnail: "https://i.ibb.co/P14GkZ1/consultorio.jpg",
-  thumbnailWidth: 325,
-  thumbnailHeight: 280,
-},
-{
-  src: "https://i.ibb.co/yVZnK7V/sala.jpg",
-  thumbnail: "https://i.ibb.co/yVZnK7V/sala.jpg",
-  thumbnailWidth: 325,
-  thumbnailHeight: 280,
-},
-{
-  src: "https://i.ibb.co/SB60y5Z/sala2.jpg",
-  thumbnail: "https://i.ibb.co/SB60y5Z/sala2.jpg",
-  thumbnailWidth: 325,
-  thumbnailHeight: 280,
-},
-{
-  src: "https://i.ibb.co/j4c0MrN/sala-espera.jpg",
-  thumbnail: "https://i.ibb.co/j4c0MrN/sala-espera.jpg",
-  thumbnailWidth: 325,
-  thumbnailHeight: 280,
-},
-{
-  src: "https://i.ibb.co/3YBbYq7/tecnico-em-radiologia.jpg",
-  thumbnail: "https://i.ibb.co/3YBbYq7/tecnico-em-radiologia.jpg",
-  thumbnailWidth: 305,
-  thumbnailHeight: 280,
-},
-{
-  src: "https://i.ibb.co/0cN4cm8/Decora-o-para-consult-rio-de-pediatria-3.jpg",
-  thumbnail: "https://i.ibb.co/0cN4cm8/Decora-o-para-consult-rio-de-pediatria-3.jpg",
-  thumbnailWidth: 305,
-  thumbnailHeight: 280,
-},
-{
-  src: "https://i.ibb.co/fDNJtp4/tecnicas-de-organizacao-para-recepcao-de-clinicas.jpg",
-  thumbnail: "https://i.ibb.co/fDNJtp4/tecnicas-de-organizacao-para-recepcao-de-clinicas.jpg",
-  thumbnailWidth: 305,
-  thumbnailHeight: 280
-}
-]
+        {
+            src: 'https://i.ibb.co/P14GkZ1/consultorio.jpg',
+            thumbnail: 'https://i.ibb.co/P14GkZ1/consultorio.jpg',
+            thumbnailWidth: 325,
+            thumbnailHeight: 280
+        },
+        {
+            src: 'https://i.ibb.co/3YBbYq7/tecnico-em-radiologia.jpg',
+            thumbnail: 'https://i.ibb.co/3YBbYq7/tecnico-em-radiologia.jpg',
+            thumbnailWidth: 305,
+            thumbnailHeight: 280
+        }
+    ]
 
 
 class Galeria extends React.Component {
-  constructor() {
-    super();
-  }
-  
-  render() {
-    return (
-      <React.Fragment>
-        <div idn="Logo" class="Logo"> 
-          <img src={logo_principal} align="center" className="photo" />
-        </div>
-        <div style={{ padding: "30px", marginLeft: "100px"}}>
-          <Gallery images={IMAGES} enableImageSelection={false}/>
-        </div>
-        <Footer />
-      </React.Fragment>
-    );
-  }
+    constructor(props) {
+        super(props)
+    }
+
+    render() {
+        return (
+            <React.Fragment>
+                <div idn="Logo" class="Logo">
+                    <img src={logo_text} align="center" className="photo"/>
+                </div>
+                <div>
+                    <br/>
+                    <img src={galeria} width={700}/>
+                    <br/>
+                </div>
+                <div style={{padding: '30px', marginLeft: '10px'}}>
+                    <Gallery images={IMAGES} enableImageSelection={false}/>
+                </div>
+                <Footer/>
+            </React.Fragment>
+        )
+    }
 }
 
 
-export default Galeria;
+export default Galeria

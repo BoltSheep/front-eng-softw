@@ -10,9 +10,10 @@
 }
 
 .app-header_text {
-  margin-left: 5px !important;
   margin-bottom: 7px !important;
   color: white !important;
+  left: auto;
+  margin-left: fill !important;
 }
 .login {
   bottom: 0;
