@@ -13,6 +13,7 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import Logar from "../../functions/Logar";
 import SvgIcon from "@material-ui/core/SvgIcon";
+import logo_principal from '../../imagens/Logo_solo.png';
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
@@ -121,7 +122,7 @@ class Header extends React.Component {
         >
           <Toolbar className="app-header">
             <Link className="app-menu__link" to="/">
-              <Logo />
+              <img src={logo_principal} alt={"Logo"}/>
             </Link>
             <Link className="app-menu__link" to="/">
               <Button
