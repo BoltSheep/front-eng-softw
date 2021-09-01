@@ -11,13 +11,14 @@ import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import Logar from "../../functions/Logar";
+import logo_principal from '../../imagens/Logo_solo.png';
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
-import { Link } from "react-router-dom";
-import logo_principal from "../../imagens/Logo_solo.png"
-import {ReactComponent as Logo} from '../../imagens/unknown.svg'
-import './Header.css'
+import {Link} from "react-router-dom";
+
+import {ReactComponent as Logo} from "../../imagens/unknown.svg";
+import "./Header.css";
 
 class Header extends React.Component {
   constructor(props) {

@@ -1,5 +1,11 @@
 .app-footer2 {
   background: #dcdcdc;
   padding: 0.5rem 2rem;
-  text-align: right;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #333333;
 }
+
+
