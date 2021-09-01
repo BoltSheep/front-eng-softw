@@ -6,6 +6,9 @@ import Footer from "../components/footer2";
 import "./Font.css";
 import {Col, Container, Row} from "react-grid-system";
 import alerta_covid from "../imagens/Atendimento_Suspenso.png";
+import sobre_nos from "../imagens/sobre_nos.png";
+import a_clinica from "../imagens/a_clinica.png";
+import slideImg from "../imagens/slide-2.jpg";;
 
 const style = {
   margin: "1%",
@@ -38,32 +41,34 @@ class Info extends React.Component {
               src={logo_principal}
               align="right"
               style={{ padding: "100px", paddingTop: "80px" }}
-            />
+             alt={'Logo_principal'}/>
             <div style={{ height: "600px", width: "565px" }} />
           </Parallax>
         </div>
 
-        <div style={{ padding: "10px" }}>
-          <Container className="Especial">
-            <img src="https://see.fontimg.com/api/renderfont4/8Mzm0/eyJyIjoiZnMiLCJoIjo0NywidyI6MTAwMCwiZnMiOjQ3LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiIzhBMDAwMCIsInQiOjF9/U3VhIHNhw7pkZSBlbSBib2FzIG3Do29zLg/sambosa.png" />
-          </Container>
+        <div>
+          <img src={sobre_nos}  alt={'Sobre_nos'}/>
         </div>
         <div>
           <img
-            src="https://see.fontimg.com/api/renderfont4/6YLRq/eyJyIjoiZnMiLCJoIjo0MiwidyI6MTAwMCwiZnMiOjQyLCJmZ2MiOiIjODQxMDEwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/U29icmUgTsOzcw/geliat-extralight.png"
-            align="left"
-            style={{ padding: "170px", paddingTop: "190px" }}
-          ></img>
-          <br></br>
+             src={a_clinica}
+             align="left"
+             style={{padding: "130px", paddingTop: "140px"}}
+             alt={'Label1'}
+          />
+          <br/>
           <div className="Font">
             <header className="Font-header">
-              A clínica médica é um dos ramos mais amplos da Medicina. Geralmente, os médicos especializados em clínica médica são o primeiro contato de um paciente que possui, por exemplo, uma queixa de dor, mas que não sabe como dar continuidade ao seu tratamento ou a que especialidade médica recorrer.
-              É por conta desse caráter polivalente que os profissionais de clínica médica devem ter uma formação mais abrangente, com um pouco de conhecimento em cada uma das áreas da Medicina, em uma integração de cuidados.
-              Por meio dos relatos dos sintomas dos pacientes, da realização de exames clínicos como raios-X e exames de sangue, e da avaliação médica, os profissionais de clínica médica conseguem realizar um diagnóstico, iniciar um tratamento e até mesmo orientar o paciente para uma segunda especialidade médica, que vai aprofundar os cuidados e a assistência nos casos de maior complexidade.
-              Quando um paciente não possui queixas de dor, mas quer realizar uma avaliação completa de seu estado de saúde, o profissional de clínica médica também é a especialidade a ser procurada. Esse médico orientará o paciente a fazer uma série de exames para ter um checkup completo e verificar seu atual estado de saúde. A atuação na prevenção de doenças e condições médicas é um dos pilares do trabalho da clínica médica.
+              A CLINICA DE RADIOLOGIA ODONTOLÓGICA vem construindo há mais de 33 anos sua trajetória balizada na busca da qualidade e confiabilidade nos serviços de radiodiagnóstico que oferece.
+              Sempre investindo em novas tecnologias para a obtenção de diagnósticos precisos, também não mede esforços para a capacitação e constante aprimoramento de seu corpo técnico no atendimento humano e personalizado aos pacientes a nós confiados.
+              Assim, age permanentemente no sentido de atingir e superar expectativas de todos os seus clientes.
             </header>
           </div>
         </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <div style={{ padding: "50px" }}>
           <Container>
             <Row justify="center" align="center">
@@ -94,6 +99,13 @@ class Info extends React.Component {
             </Row>
           </Container>
         </div>
+          <div>
+              <img
+                  src={slideImg}
+                  width={1250}
+                  style={{ paddingTop: "10px" }}
+              />
+          </div>
         <div style={{ paddingTop: "50px", paddingBottom: "50px" }}>
           <Container justify="center">
             <Row justify="center">
