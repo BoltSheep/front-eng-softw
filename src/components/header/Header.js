@@ -260,6 +260,7 @@ class Header extends React.Component {
             aria-describedby="simple-modal-description"
           >
             <DialogContent>
+              {"Login:"}
               <TextField
                 name="user"
                 label="Username"
@@ -274,7 +275,7 @@ class Header extends React.Component {
                 name="senha"
                 label="Senha"
                 style={{ "margin-top": "10px" }}
-                placeholder="****"
+                placeholder="******"
                 onChange={this.handleDateChange}
                 fullWidth
                 type={this.state.showPassword ? "text" : "password"}
@@ -306,7 +307,7 @@ class Header extends React.Component {
                 variant="outlined"
                 onClick={this.logar}
                 style={{
-                  color: "#008A3B",
+                  color: "#5700a5",
                   border: "1px solid",
                   borderRadius: "20px",
                   borderColor: "#fff",
