@@ -2,6 +2,7 @@ import * as React from "react";
 import { render } from 'react-dom';
 import Gallery from 'react-grid-gallery';
 import logo_text from "../imagens/logo_text.png";
+import logo_principal from "../imagens/logo_clinica_principal.png";
 import "./Galeria.css";
 import Footer from "../components/footer";
 
@@ -120,7 +121,7 @@ class Galeria extends React.Component {
     return (
       <React.Fragment>
         <div idn="Logo" class="Logo"> 
-          <img src={logo_text} align="center" className="photo" />
+          <img src={logo_principal} align="center" className="photo" />
         </div>
         <div style={{ padding: "30px", marginLeft: "100px"}}>
           <Gallery images={IMAGES} enableImageSelection={false}/>
