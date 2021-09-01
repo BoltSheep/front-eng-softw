@@ -1,9 +1,6 @@
 import * as React from 'react'
-import {render} from 'react-dom'
 import Gallery from 'react-grid-gallery'
-import logo_text from '../imagens/logo_clinica_principal.png'
 import galeria from '../imagens/photos_galery.png'
-import muitosDocs from '../imagens/LotsOfDocs.png'
 import './Galeria.css'
 import Footer from '../components/footer'
 
@@ -62,8 +59,8 @@ const IMAGES =
         },
 
         {
-            src: 'https://i.ibb.co/P14GkZ1/consultorio.jpg',
-            thumbnail: 'https://i.ibb.co/P14GkZ1/consultorio.jpg',
+            src: 'https://redegenoma.com.br/wp-content/uploads/2019/07/radiologia.png',
+            thumbnail: 'https://redegenoma.com.br/wp-content/uploads/2019/07/radiologia.png',
             thumbnailWidth: 325,
             thumbnailHeight: 280
         },
@@ -84,9 +81,6 @@ class Galeria extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <div idn="Logo" class="Logo">
-                    <img src={logo_text} align="center" className="photo"/>
-                </div>
                 <div>
                     <br/>
                     <img src={galeria} width={700}/>
