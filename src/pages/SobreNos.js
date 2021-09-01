@@ -143,11 +143,7 @@ class Info extends React.Component {
                 src={alerta_covid} width={1000}
             />
         </div>
-        <Footer>
-        <div>
-          Avenida Getúlio Vargas, 1427 Savassi - Belo Horizonte
-        </div>
-        </Footer>
+        <Footer/>
       </div>
     );
   }

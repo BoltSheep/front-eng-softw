@@ -29,6 +29,9 @@ class Footer extends React.Component {
             <IconButton>
               <InstagramIcon />
             </IconButton>
+            <div>
+              Avenida Getúlio Vargas, 1427 Savassi - Belo Horizonte
+            </div>
           </Toolbar>
         </AppBar>
       </React.Fragment>
