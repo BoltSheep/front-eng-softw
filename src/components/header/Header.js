@@ -1,25 +1,23 @@
-import React from "react";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Button from "@material-ui/core/Button";
-import Menu from "@material-ui/core/Menu";
-import TextField from "@material-ui/core/TextField";
-import MenuItem from "@material-ui/core/MenuItem";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
-import AccountCircle from "@material-ui/icons/AccountCircle";
-import Dialog from "@material-ui/core/Dialog";
-import DialogActions from "@material-ui/core/DialogActions";
-import DialogContent from "@material-ui/core/DialogContent";
-import Logar from "../../functions/Logar";
-import SvgIcon from "@material-ui/core/SvgIcon";
-import InputAdornment from "@material-ui/core/InputAdornment";
-import Visibility from "@material-ui/icons/Visibility";
-import VisibilityOff from "@material-ui/icons/VisibilityOff";
-import { Link } from "react-router-dom";
+import React from 'react'
+import AppBar from '@material-ui/core/AppBar'
+import Toolbar from '@material-ui/core/Toolbar'
+import Button from '@material-ui/core/Button'
+import Menu from '@material-ui/core/Menu'
+import TextField from '@material-ui/core/TextField'
+import MenuItem from '@material-ui/core/MenuItem'
+import IconButton from '@material-ui/core/IconButton'
+import AccountCircle from '@material-ui/icons/AccountCircle'
+import Dialog from '@material-ui/core/Dialog'
+import DialogActions from '@material-ui/core/DialogActions'
+import DialogContent from '@material-ui/core/DialogContent'
+import Logar from '../../functions/Logar'
+import InputAdornment from '@material-ui/core/InputAdornment'
+import Visibility from '@material-ui/icons/Visibility'
+import VisibilityOff from '@material-ui/icons/VisibilityOff'
+import {Link} from 'react-router-dom'
 
-import { ReactComponent as Logo } from "../../imagens/unknown.svg";
-import "./Header.css";
+import {ReactComponent as Logo} from '../../imagens/unknown.svg'
+import './Header.css'
 
 class Header extends React.Component {
   constructor(props) {
@@ -54,18 +52,18 @@ class Header extends React.Component {
       listagem: event.currentTarget,
     });
   };
-  closeCadastramento = (event) => {
+  closeCadastramento = _ => {
     this.setState({
       cadastramento: false,
     });
   };
-  closeModal = (event) => {
+  closeModal = _ => {
     this.setState({
       loginModal: false,
     });
   };
-  openModal = (event) => {
-    if (this.state.logged == false) {
+  openModal = _ => {
+    if (this.state.logged === false) {
       this.setState({
         loginModal: true,
       });
@@ -84,11 +82,13 @@ class Header extends React.Component {
   logar = async () => {
     console.log(this.state.user, this.state.senha);
     let user = await Logar(this.state.user, this.state.senha);
+    user[0].idpessoa = undefined
+    user[0].idfuncionario = undefined
     console.log(user)
     this.setState({
       name: user[0].nome,
       id: user[0].idpessoa,
-      isDoctor: user[0].idfuncionario[0] == "m"?true:false,
+      isDoctor: user[0].idfuncionario[0] === "m",
       logged: true,
       loginModal: false,
       url: "/listMinhaConsulta/"+user[0].idpessoa
@@ -116,7 +116,7 @@ class Header extends React.Component {
         <AppBar
           position="fixed"
           style={{
-            "background-color": "#5700a5",
+            "background-color": "#65296F",
           }}
         >
           <Toolbar className="app-header">
@@ -305,7 +305,7 @@ class Header extends React.Component {
                 variant="outlined"
                 onClick={this.logar}
                 style={{
-                  color: "#5700a5",
+                  color: "#008A3B",
                   border: "1px solid",
                   borderRadius: "20px",
                   borderColor: "#fff",

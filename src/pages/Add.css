@@ -1,17 +1,17 @@
 .Mui-focused {
-    color: #5700a5
+    color: #008a3b
 }
 
 .MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track {
-    background-color: #5700a5 !important;
+    background-color: #008a3b !important;
 }
 
 .MuiSwitch-colorSecondary.Mui-checked {
-    color: #5700a5 !important;
+    color: #008a3b !important;
 }
 
 .MuiFormLabel-colorSecondary.Mui-focused {
-    color: #5700a5 !important;
+    color: #008a3b !important;
 }
 
 .MuiGrid-spacing-xs-1 {
@@ -20,6 +20,6 @@
 }
 
 .MuiButton-containedSecondary {
-    background-color: #5700a5 !important;
+    background-color: #008a3b !important;
     border-radius: 25px !important;
 }

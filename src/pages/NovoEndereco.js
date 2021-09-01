@@ -1,21 +1,15 @@
-import * as React from "react";
-import { render } from "react-dom";
-import TextField from "@material-ui/core/TextField";
-import Grid from "@material-ui/core/Grid";
-import Switch from "@material-ui/core/Switch";
-import InputAdornment from "@material-ui/core/InputAdornment";
-import IconButton from "@material-ui/core/IconButton";
-import Visibility from "@material-ui/icons/Visibility";
-import VisibilityOff from "@material-ui/icons/VisibilityOff";
-import InputMask from "react-input-mask";
-import MaterialInput from "@material-ui/core/Input";
-import Button from "@material-ui/core/Button";
-import Snackbar from "@material-ui/core/Snackbar";
-import Alert from "@material-ui/lab/Alert";
-import saveEndereco from "../functions/setEndereco";
-import Footer from "../components/footer";
+import * as React from 'react'
+import TextField from '@material-ui/core/TextField'
+import Grid from '@material-ui/core/Grid'
+import InputMask from 'react-input-mask'
+import Button from '@material-ui/core/Button'
+import Snackbar from '@material-ui/core/Snackbar'
+import Alert from '@material-ui/lab/Alert'
+import saveEndereco from '../functions/setEndereco'
+import Footer from '../components/footer'
 
-import "./Add.css";
+import './Add.css'
+
 const style = {
   margin: "10%",
 };
@@ -44,7 +38,7 @@ class AddAddress extends React.Component {
       this.state.cidade,
       this.state.estado
     );
-    if (response != "error") {
+    if (response !== "error") {
       this.setState(initialState);
     } else {
         this.setState({
@@ -152,7 +146,7 @@ class AddAddress extends React.Component {
                 variant="outlined"
               />
             </Grid>
-            <Grid item xs={4}></Grid>
+            <Grid item xs={4}/>
             <Grid item xs={4}>
               <Button
                 onClick={this.save}
@@ -163,7 +157,7 @@ class AddAddress extends React.Component {
                 Salvar
               </Button>
             </Grid>
-            <Grid item xs={4}></Grid>
+            <Grid item xs={4}/>
           </Grid>
         </div>
         
