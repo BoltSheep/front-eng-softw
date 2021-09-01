@@ -15,7 +15,7 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import { Link } from "react-router-dom";
-
+import logo_principal from "../../imagens/Logo_solo.png"
 import {ReactComponent as Logo} from '../../imagens/unknown.svg'
 import './Header.css'
 
@@ -121,7 +121,7 @@ class Header extends React.Component {
         >
           <Toolbar className="app-header">
             <Link className="app-menu__link" to="/">
-              <img src={logo_principal} alt={"Logo"}/>
+              <img className="logo-header" src={logo_principal} alt={"Logo"}/>
             </Link>
             <Link className="app-menu__link" to="/">
               <Button

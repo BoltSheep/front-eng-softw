@@ -5,11 +5,10 @@
   align-items: flex-start;
 }
 
-.app-header__logo {
-  background: #999;
-  height: 25px;
-  width: 100px;
+.logo-header {
+  width: 50px;
 }
+
 .app-header_text {
   margin-left: 5px !important;
   margin-bottom: 7px !important;
