@@ -53,18 +53,18 @@ class Header extends React.Component {
       listagem: event.currentTarget,
     });
   };
-  closeCadastramento = (event) => {
+  closeCadastramento = _ => {
     this.setState({
       cadastramento: false,
     });
   };
-  closeModal = (event) => {
+  closeModal = _ => {
     this.setState({
       loginModal: false,
     });
   };
-  openModal = (event) => {
-    if (this.state.logged == false) {
+  openModal = _ => {
+    if (this.state.logged === false) {
       this.setState({
         loginModal: true,
       });
@@ -83,11 +83,13 @@ class Header extends React.Component {
   logar = async () => {
     console.log(this.state.user, this.state.senha);
     let user = await Logar(this.state.user, this.state.senha);
+    user[0].idpessoa = undefined
+    user[0].idfuncionario = undefined
     console.log(user)
     this.setState({
       name: user[0].nome,
       id: user[0].idpessoa,
-      isDoctor: user[0].idfuncionario[0] == "m"?true:false,
+      isDoctor: user[0].idfuncionario[0] === "m",
       logged: true,
       loginModal: false,
       url: "/listMinhaConsulta/"+user[0].idpessoa
@@ -115,12 +117,12 @@ class Header extends React.Component {
         <AppBar
           position="fixed"
           style={{
-            "background-color": "#5700a5",
+            "background-color": "#65296F",
           }}
         >
           <Toolbar className="app-header">
             <Link className="app-menu__link" to="/">
-              <img src={logo_principal} alt={"Logo"}/>
+              <img className="logo-header" src={logo_principal} alt={"Logo"}/>
             </Link>
             <Link className="app-menu__link" to="/">
               <Button
@@ -304,7 +306,7 @@ class Header extends React.Component {
                 variant="outlined"
                 onClick={this.logar}
                 style={{
-                  color: "#5700a5",
+                  color: "#008A3B",
                   border: "1px solid",
                   borderRadius: "20px",
                   borderColor: "#fff",
